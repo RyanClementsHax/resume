@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+    .nav-links {
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .nav-button {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        padding: 1rem;
+        vertical-align: middle;
+        -webkit-appearance: none;
+    }
+    
+    .nav-button:hover {
+        color: #007199;
+        background-color: transparentize($color: $primary-color, $amount: 0.9);
+        border-right: 5px solid $primary-color;
+        padding-right: calc(1rem - 5px);
+    }
+}
