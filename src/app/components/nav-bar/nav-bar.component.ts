@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent {}
+export class NavBarComponent {
+  private expanded = false;
+
+  toggleMenu() {
+    this.expanded = !this.expanded;
+  }
+}

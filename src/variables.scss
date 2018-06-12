@@ -1,1 +1,2 @@
 $primary-color: #007199;
+$primary-color-faded: transparentize($color: $primary-color, $amount: 0.9);
