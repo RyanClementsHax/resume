@@ -1,3 +1,9 @@
 :host {
     width: 100%;
+    position: relative;
+
+    nav-bar {
+        position: absolute;
+        top: 0;
+    }
 }

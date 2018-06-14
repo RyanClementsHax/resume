@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "resume"
+  "defaultProject": "resume",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

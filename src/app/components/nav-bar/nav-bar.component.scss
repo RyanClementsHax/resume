@@ -3,78 +3,94 @@
 $button-border-right: 5px;
 $light-border: 1px solid rgba(0,0,0,.125);
 
-.nav-bar {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    border-bottom: $light-border;
+:host {
+    width: 100%;
+    background: white;
 
-    .nav-links {
-        margin-top: 0;
-        margin-left: auto;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .nav-button {
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: .2em;
-        padding: 1rem;
-        vertical-align: middle;
-        -webkit-appearance: none;
-    }
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-bottom: $light-border;
     
-    .nav-button:hover {
-        color: #007199;
-        background-color: $primary-color-faded;
-        border-right: $button-border-right solid $primary-color;
-        padding-right: calc(1rem - #{$button-border-right});
-    }
-
-    .nav-toggle {
-        cursor: pointer;
-        display: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        margin-left: auto;
-        border: 0;
-        padding: 0 1rem;
-        background: #fff;
-
-        svg {
-            width: 2rem;
-            height: 2rem;
-        }
-    }
-
-    .nav-toggle.expanded {
-        background: $primary-color-faded;
-    }
-
-    @media screen and (max-width: 45em) {
-        .nav-links {
-            position: absolute;
+        .small-nav-container {
             display: flex;
-            flex-direction: column;
-            top: 3.5rem;
-            width: 100%;
-            overflow: hidden;
-            transition: max-height 250ms;
-
-            .nav-link {
-                width: 100%;
-                border-bottom: $light-border;
+        }
+    
+        .nav-links {
+            margin-top: 0;
+            margin-left: auto;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    
+        .link-container {
+            cursor: pointer;
+            display: inline-block;
+        }
+    
+        .nav-button {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            padding: 1rem;
+            vertical-align: middle;
+            -webkit-appearance: none;
+        }
+        
+        .nav-button:hover {
+            color: #007199;
+            background-color: $primary-color-faded;
+            border-right: $button-border-right solid $primary-color;
+            padding-right: calc(1rem - #{$button-border-right});
+        }
+    
+        .nav-toggle {
+            cursor: pointer;
+            display: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: auto;
+            border: 0;
+            padding: 0 1rem;
+            background: #fff;
+    
+            svg {
+                width: 2rem;
+                height: 2rem;
             }
         }
-
-        .nav-toggle {
-            display: block;
+    
+        .nav-toggle.expanded {
+            background: $primary-color-faded;
+        }
+    }
+    
+    @media screen and (max-width: 45em) {
+        .nav-bar {
+            flex-direction: column;
+    
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                overflow: hidden;
+                transition: max-height 250ms;
+    
+                .link-container {
+                    border-top: $light-border;
+        
+                    .nav-link {
+                        width: 100%;
+                    }
+                }
+            }
+        
+            .nav-toggle {
+                display: block;
+            }
         }
     }
 }
