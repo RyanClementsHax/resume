@@ -64,13 +64,8 @@ $light-border: 1px solid rgba(0,0,0,.125);
             flex-direction: column;
             top: 3.5rem;
             width: 100%;
-            max-height: 0;
             overflow: hidden;
             transition: max-height 250ms;
-
-            &.expanded {
-                max-height: calc(3.5rem * 3 + 3px);
-            }
 
             .nav-link {
                 width: 100%;

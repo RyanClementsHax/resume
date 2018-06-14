@@ -22,7 +22,10 @@
       </path>
     </svg>
   </button>
-  <ul class="nav-links" [ngClass]="expanded ? 'expanded' : ''">
+  <ul
+    #links 
+    class="nav-links"
+    [ngStyle]="{ 'maxHeight': expanded ? linksMaxHeight + 'px' : 0 }">
     <li class="nav-button nav-link">Item 1</li>
     <li class="nav-button nav-link">Item 2</li>
     <li class="nav-button nav-link">Item 3</li>
