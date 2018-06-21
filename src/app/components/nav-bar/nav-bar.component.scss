@@ -39,9 +39,9 @@ $light-border: 1px solid rgba(0,0,0,.125);
         }
         
         .nav-button:hover {
-            color: #007199;
-            background-color: $primary-color-faded;
-            border-right: $button-border-right solid $primary-color;
+            color: $color-primary;
+            background-color: $color-primary-faded;
+            border-right: $button-border-right solid $color-accent;
             padding-right: calc(1rem - #{$button-border-right});
         }
     
@@ -55,7 +55,7 @@ $light-border: 1px solid rgba(0,0,0,.125);
             margin-left: auto;
             border: 0;
             padding: 0 1rem;
-            background: #fff;
+            background: white;
     
             svg {
                 width: 2rem;
@@ -64,7 +64,7 @@ $light-border: 1px solid rgba(0,0,0,.125);
         }
     
         .nav-toggle.expanded {
-            background: $primary-color-faded;
+            background: $color-primary-faded;
         }
     }
     

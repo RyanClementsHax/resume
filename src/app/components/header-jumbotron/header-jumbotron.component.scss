@@ -1,6 +1,22 @@
 @import "../../../variables.scss";
 
 .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background: $primary-color;
+    background: $color-primary-faded;
+    background-image: url('/assets/img/header.jpg');
+    background-size: cover;
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    h2 {
+        color: $color-accent;
+        margin: 0;
+    }
 }
