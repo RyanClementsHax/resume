@@ -14,7 +14,6 @@ export class NavBarComponent implements AfterViewInit {
     const linkHeight = this.links.nativeElement.childNodes[0].offsetHeight;
     const linkCount = this.links.nativeElement.childNodes.length;
     this.linksMaxHeight = linkCount * linkHeight;
-    console.log(this.links);
   }
 
   toggleMenu() {

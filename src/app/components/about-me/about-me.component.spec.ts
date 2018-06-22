@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderJumbotronComponent } from './header-jumbotron.component';
+import { AboutMeComponent } from './about-me.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-describe('HeaderJumbotronComponent', () => {
-  let component: HeaderJumbotronComponent;
-  let fixture: ComponentFixture<HeaderJumbotronComponent>;
+describe('HomePageComponent', () => {
+  let component: AboutMeComponent;
+  let fixture: ComponentFixture<AboutMeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderJumbotronComponent],
+      declarations: [AboutMeComponent],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderJumbotronComponent);
+    fixture = TestBed.createComponent(AboutMeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
