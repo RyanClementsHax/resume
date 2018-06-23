@@ -2,27 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ParallaxModule } from 'ngx-parallax';
-
 import { AppComponent } from './containers/app/app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { HeaderJumbotronComponent } from './components/header-jumbotron/header-jumbotron.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
+import { AboutMeComponent } from './modules/about-me/containers/about-me/about-me.component';
+import { AboutMeModule } from './modules/about-me/about-me.module';
 
 export const ROUTES: Routes = [
-  { path: '', component: AboutMeComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'about-me' },
+  { path: 'about-me', component: AboutMeComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    HeaderJumbotronComponent,
-    AboutMeComponent
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
-    ParallaxModule,
+    AboutMeModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

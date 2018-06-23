@@ -2,3 +2,5 @@ $color-primary: #0f4880;
 $color-accent: #D47500;
 $color-primary-faded: transparentize($color: $color-primary, $amount: 0.9);
 $color-text-primary: #545e6f;
+
+$light-border: 1px solid rgba(0,0,0,.125);
