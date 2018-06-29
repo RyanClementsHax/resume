@@ -2,5 +2,12 @@ $color-primary: #0f4880;
 $color-accent: #D47500;
 $color-primary-faded: transparentize($color: $color-primary, $amount: 0.9);
 $color-text-primary: #545e6f;
+$color-background-main: white;
 
-$light-border: 1px solid rgba(0,0,0,.125);
+$text-padding: 1rem;
+
+$light-border-height: 1px;
+$light-border: $light-border-height solid rgba(0,0,0,.125);
+
+$nav-bar-height: calc(2 * #{$text-padding} + 1.5rem + #{$light-border-height});
+$jumbotron-height: calc(100vh - #{$nav-bar-height});

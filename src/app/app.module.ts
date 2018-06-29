@@ -9,7 +9,8 @@ import { AboutMeModule } from './modules/about-me/about-me.module';
 
 export const ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'about-me' },
-  { path: 'about-me', component: AboutMeComponent }
+  { path: 'about-me', component: AboutMeComponent },
+  { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule' }
 ];
 
 @NgModule({

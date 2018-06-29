@@ -3,6 +3,7 @@
 :host {
     width: 100%;
     position: relative;
+    padding-top: $nav-bar-height;
 
     nav-bar {
         position: absolute;

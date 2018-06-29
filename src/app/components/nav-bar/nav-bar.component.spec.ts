@@ -1,17 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Router, NavigationStart } from '@angular/router';
 
 import { NavBarComponent } from './nav-bar.component';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { of } from 'rxjs';
+
+class MockRouter {
+  public events = of(new NavigationStart(0, 'http://localhost:4200/login', 'imperative'));
+}
 
 describe('NavBarComponent', () => {
   let component: NavBarComponent;
   let fixture: ComponentFixture<NavBarComponent>;
-  let debugElement: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavBarComponent ]
+      declarations: [NavBarComponent],
+      providers: [{ provide: Router, useClass: MockRouter }]
     })
     .compileComponents();
   }));
@@ -19,12 +23,19 @@ describe('NavBarComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NavBarComponent);
     component = fixture.componentInstance;
-    debugElement = fixture.debugElement;
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should set expanded to false by default', () => {
+    expect(component.expanded).toBe(false);
+  });
+
+  it('should set expanded to false on NavigationStart event', () => {
+    expect(component.expanded).toBe(false);
   });
 
   describe('toggleMenu()', () => {

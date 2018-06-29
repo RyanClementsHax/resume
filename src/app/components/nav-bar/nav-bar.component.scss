@@ -4,7 +4,8 @@ $button-border-right: 5px;
 
 :host {
     width: 100%;
-    background: white;
+    height: $nav-bar-height;
+    background: $color-background-main;
 
     .nav-bar {
         display: flex;
@@ -26,14 +27,15 @@ $button-border-right: 5px;
         .link-container {
             cursor: pointer;
             display: inline-block;
+            background: $color-background-main;
         }
     
         .nav-button {
+            display: block;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: .2em;
-            padding: 1rem;
-            vertical-align: middle;
+            padding: $text-padding;
             -webkit-appearance: none;
 
             &:visited {
@@ -45,7 +47,7 @@ $button-border-right: 5px;
             color: $color-primary;
             background-color: $color-primary-faded;
             border-right: $button-border-right solid $color-accent;
-            padding-right: calc(1rem - #{$button-border-right});
+            padding-right: calc(#{$text-padding} - #{$button-border-right});
         }
     
         .nav-toggle {
@@ -57,8 +59,8 @@ $button-border-right: 5px;
             user-select: none;
             margin-left: auto;
             border: 0;
-            padding: 0 1rem;
-            background: white;
+            padding: 0 $text-padding;
+            background: $color-background-main;
     
             svg {
                 width: 2rem;

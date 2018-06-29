@@ -1,6 +1,6 @@
 <nav class="nav-bar">
   <div class="small-nav-container">
-    <a class="nav-button" routerLink="/">Ryan Clements</a>
+    <a class="nav-button nav-link" routerLink="/">Ryan Clements</a>
     <button
       type="button"
       aria-label="Toggle menu"
@@ -29,13 +29,13 @@
     class="nav-links"
     [ngStyle]="{ 'maxHeight': expanded ? linksMaxHeight + 'px' : 0 }">
     <li class="link-container">
-      <div class="nav-button nav-link">Item 1</div>
+      <a class="nav-button nav-link" routerLink="projects">Projects</a>
     </li>
     <li class="link-container">
-      <div class="nav-button nav-link">Item 2</div>
+      <a class="nav-button nav-link">Item 2</a>
     </li>
     <li class="link-container">
-      <div class="nav-button nav-link">Item 3</div>
+      <a class="nav-button nav-link">Item 3</a>
     </li>
   </ul>
 </nav>
