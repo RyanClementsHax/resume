@@ -2,20 +2,23 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router, NavigationStart } from '@angular/router';
 
 import { NavBarComponent } from './nav-bar.component';
-import { of } from 'rxjs';
+import { Subject } from 'rxjs';
 
 class MockRouter {
-  public events = of(new NavigationStart(0, 'http://localhost:4200/login', 'imperative'));
+  events = new Subject();
 }
 
 describe('NavBarComponent', () => {
   let component: NavBarComponent;
   let fixture: ComponentFixture<NavBarComponent>;
+  let router: MockRouter;
 
   beforeEach(async(() => {
+    router = new MockRouter();
+
     TestBed.configureTestingModule({
       declarations: [NavBarComponent],
-      providers: [{ provide: Router, useClass: MockRouter }]
+      providers: [{ provide: Router, useValue: router }]
     })
     .compileComponents();
   }));
@@ -35,6 +38,10 @@ describe('NavBarComponent', () => {
   });
 
   it('should set expanded to false on NavigationStart event', () => {
+    component.toggleMenu();
+
+    router.events.next(new NavigationStart(0, 'http://localhost:4200/login', 'imperative'));
+
     expect(component.expanded).toBe(false);
   });
 
