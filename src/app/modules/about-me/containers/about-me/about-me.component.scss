@@ -12,7 +12,6 @@
     background-size: cover;
 
     h1 {
-        font-size: 3rem;
         margin: 0;
     }
 
@@ -25,7 +24,7 @@
 article {
     .paragraphWrapper {
         margin: auto;
-        max-width: 600px;
-        padding: $text-padding;
+        max-width: $content-width;
+        padding: $content-padding;
     }
 }

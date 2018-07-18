@@ -1,0 +1,11 @@
+@import "../../../../../variables.scss";
+
+.container {
+    max-width: $content-width;
+    padding: $content-padding;
+    border: $light-border;
+    border-radius: 3px;
+    margin: 0 auto 50px;
+    
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+}

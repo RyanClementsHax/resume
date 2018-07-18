@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Router, NavigationStart } from '@angular/router';
 
 import { NavBarComponent } from './nav-bar.component';
@@ -48,7 +48,9 @@ describe('NavBarComponent', () => {
   describe('toggleMenu()', () => {
     it('should toggle the expanded attribute', () => {
       expect(component.expanded).toBe(false);
+
       component.toggleMenu();
+
       expect(component.expanded).toBe(true);
     });
   });

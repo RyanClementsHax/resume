@@ -41,13 +41,16 @@ $button-border-right: 5px;
             &:visited {
                 color: inherit;
             }
-        }
-        
-        .nav-button:hover {
-            color: $color-primary;
-            background-color: $color-primary-faded;
-            border-right: $button-border-right solid $color-accent;
-            padding-right: calc(#{$text-padding} - #{$button-border-right});
+
+            &:hover, &.active {
+                color: $color-primary;
+                background-color: $color-primary-faded;
+            }
+
+            &:hover {
+                border-right: $button-border-right solid $color-accent;
+                padding-right: calc(#{$text-padding} - #{$button-border-right});
+            }
         }
     
         .nav-toggle {
