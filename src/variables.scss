@@ -4,6 +4,8 @@ $color-primary-faded: transparentize($color: $color-primary, $amount: 0.9);
 $color-text-primary: #545e6f;
 $color-background-main: white;
 
+$default-box-shadow: 3px 3px 4px rgba(0,0,0,.1);
+
 $text-padding: 1rem;
 $content-padding: 1rem;
 $content-width: 600px;
@@ -13,3 +15,5 @@ $light-border: $light-border-height solid rgba(0,0,0,.125);
 
 $nav-bar-height: calc(2 * #{$text-padding} + 1.5rem + #{$light-border-height});
 $jumbotron-height: calc(100vh - #{$nav-bar-height});
+
+$small-screen-break-point: 45em;

@@ -9,25 +9,29 @@ $button-border-right: 5px;
 
     .nav-bar {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
         border-bottom: $light-border;
+        box-shadow: $default-box-shadow;
     
         .small-nav-container {
             display: flex;
         }
     
         .nav-links {
+            display: flex;
+            flex-direction: column;
             margin-top: 0;
-            margin-left: auto;
             margin-bottom: 0;
             padding: 0;
+            overflow: hidden;
+            transition: max-height 250ms;
         }
     
         .link-container {
             cursor: pointer;
             display: inline-block;
             background: $color-background-main;
+            border-top: $light-border;
         }
     
         .nav-button {
@@ -55,49 +59,42 @@ $button-border-right: 5px;
     
         .nav-toggle {
             cursor: pointer;
-            display: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+            padding: 0 $text-padding;
             margin-left: auto;
             border: 0;
-            padding: 0 $text-padding;
             background: $color-background-main;
-    
+        
             svg {
                 width: 2rem;
                 height: 2rem;
             }
-        }
-    
-        .nav-toggle.expanded {
-            background: $color-primary-faded;
+
+            &.expanded {
+                background: $color-primary-faded;
+            }
         }
     }
-    
-    @media screen and (max-width: 45em) {
+
+    @media screen and (min-width: $small-screen-break-point) {
         .nav-bar {
-            flex-direction: column;
+            flex-direction: row;
     
             .nav-links {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                overflow: hidden;
-                transition: max-height 250ms;
-    
+                display: block;
+                margin-left: auto;
+                overflow: initial;
+
                 .link-container {
-                    border-top: $light-border;
-        
-                    .nav-link {
-                        width: 100%;
-                    }
+                    border-top: none;
                 }
             }
         
             .nav-toggle {
-                display: block;
+                display: none;
+                margin-left: auto;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
             }
         }
     }

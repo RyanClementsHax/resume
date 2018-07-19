@@ -27,6 +27,7 @@
   <ul
     #links 
     class="nav-links"
+    [ngClass]="{ expanded: expanded }"
     [ngStyle]="{ 'maxHeight': expanded ? linksMaxHeight + 'px' : 0 }">
     <li class="link-container">
       <a class="nav-button nav-link" routerLink="projects" routerLinkActive="active">Projects</a>
