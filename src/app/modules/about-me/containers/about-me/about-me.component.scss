@@ -1,4 +1,4 @@
-@import "../../../../../variables.scss";
+@import "variables.scss";
 
 .jumbotron {
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: $jumbotron-height;
+    height: 1000px;
     background: $color-primary-faded;
     background-image: url('/assets/img/header.jpg');
     background-size: cover;

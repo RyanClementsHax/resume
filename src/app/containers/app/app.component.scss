@@ -1,8 +1,8 @@
-@import "../../../variables.scss";
+@import "variables.scss";
 
 :host {
-    width: 100%;
     position: relative;
+    width: 100%;
     padding-top: $nav-bar-height;
 
     nav-bar {
