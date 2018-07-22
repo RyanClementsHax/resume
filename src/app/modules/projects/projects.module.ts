@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ProjectsContainerComponent } from './containers/projects-container/projects-container.component';
 import { ProjectPresentationComponent } from './components/project-presentation/project-presentation.component';
+import { ProjectsService } from './services/projects.service';
 
 export const ROUTES: Routes = [
   { path: '', component: ProjectsContainerComponent }
@@ -17,6 +18,7 @@ export const ROUTES: Routes = [
   declarations: [
     ProjectsContainerComponent,
     ProjectPresentationComponent
-  ]
+  ],
+  providers: [ProjectsService]
 })
 export class ProjectsModule { }
