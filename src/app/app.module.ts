@@ -8,9 +8,10 @@ import { AboutMeComponent } from './modules/about-me/containers/about-me/about-m
 import { AboutMeModule } from './modules/about-me/about-me.module';
 
 export const ROUTES: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'about-me' },
   { path: 'about-me', component: AboutMeComponent },
-  { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule' }
+  { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule' },
+  { path: 'experience', loadChildren: './modules/experience/experience.module#ExperienceModule' },
+  { path: '**', pathMatch: 'full', redirectTo: 'about-me' }
 ];
 
 @NgModule({
@@ -26,4 +27,4 @@ export const ROUTES: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

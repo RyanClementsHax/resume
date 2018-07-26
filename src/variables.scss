@@ -14,6 +14,7 @@ $light-border-height: 1px;
 $light-border: $light-border-height solid rgba(0,0,0,.125);
 
 $nav-bar-height: calc(2 * #{$text-padding} + 1.5rem + #{$light-border-height});
+// IE doesn't support nested calc calls
 $jumbotron-height: calc(100vh - (2 * #{$text-padding} + 1.5rem + #{$light-border-height}));
 
 $small-screen-break-point: 45em;

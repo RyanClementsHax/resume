@@ -6,10 +6,10 @@ import { ProjectsService } from '../../services/projects.service';
 import { Subject } from 'rxjs';
 
 class MockProjectsService {
-  projects = new Subject();
+  projects$ = new Subject();
 
   getProjects() {
-    return this.projects;
+    return this.projects$;
   }
 }
 

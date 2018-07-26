@@ -21,4 +21,4 @@ export const ROUTES: Routes = [
   ],
   providers: [ProjectsService]
 })
-export class ProjectsModule { }
+export class ProjectsModule {}

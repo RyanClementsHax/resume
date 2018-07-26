@@ -9,10 +9,10 @@ export interface Project {
 
 @Injectable()
 export class ProjectsService {
-  private projects: Observable<Project[]>;
+  private projects$: Observable<Project[]>;
 
   constructor() {
-    this.projects = of(
+    this.projects$ = of(
       [
         {
           title: 'This Website!',
@@ -24,6 +24,6 @@ export class ProjectsService {
   }
 
   getProjects() {
-    return this.projects;
+    return this.projects$;
   }
 }

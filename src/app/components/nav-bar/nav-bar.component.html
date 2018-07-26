@@ -30,13 +30,10 @@
     [ngClass]="{ expanded: expanded }"
     [ngStyle]="{ 'maxHeight': expanded ? linksMaxHeight + 'px' : 0 }">
     <li class="link-container">
-      <a class="nav-button nav-link" routerLink="projects" routerLinkActive="active">Projects</a>
+      <a class="nav-button nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
     </li>
     <li class="link-container">
-      <a class="nav-button nav-link">Item 2</a>
-    </li>
-    <li class="link-container">
-      <a class="nav-button nav-link">Item 3</a>
+      <a class="nav-button nav-link" routerLink="/experience" routerLinkActive="active">Experience</a>
     </li>
   </ul>
 </nav>
