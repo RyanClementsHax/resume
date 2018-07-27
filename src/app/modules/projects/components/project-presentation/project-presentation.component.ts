@@ -10,6 +10,7 @@ export class ProjectPresentationComponent {
   @Input() project: Project = {
     title: '',
     description: '',
+    technologies: [],
     imgUrl: ''
   };
 }

@@ -1,3 +1,20 @@
-h1 {
-    text-align: center;
+@import "variables.scss";
+
+:host {
+    display: block;
+    padding: $content-padding;
+
+    h1 {
+        text-align: center;
+    }
+    
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        article {
+            margin-bottom: 50px;
+        }
+    }
 }

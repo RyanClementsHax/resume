@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+:host {
+    display: block;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $content-width;
+        padding: $content-padding;
+        border: $light-border;
+        border-radius: 3px;
+        box-shadow: $default-box-shadow;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 3px;
+        }
+
+        .description {
+            display: inline-block;
+            width: 100%;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width: $small-screen-break-point) {
+            flex-direction: row;
+            align-items: flex-start;
+
+            img {
+                width: 30%;
+            }
+
+            .description {
+                margin-left: $content-padding;
+            }
+        }
+    }
+}

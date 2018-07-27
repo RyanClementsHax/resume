@@ -1,6 +1,6 @@
 <h1>Super&nbsp;Cool Nerd&nbsp;Stuff!</h1>
 <div class="project-list">
-    <div *ngFor="let project of projects$ | async">
+    <article *ngFor="let project of projects$ | async">
         <project-presentation [project]="project"></project-presentation>
-    </div>
+    </article>
 </div>

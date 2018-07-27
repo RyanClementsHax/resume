@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ProjectsService, Project } from '../../services/projects.service';
+
 import { Observable } from 'rxjs';
+
+import { ProjectsService, Project } from '../../services/projects.service';
 
 @Component({
   selector: 'projects-container',
