@@ -1,7 +1,10 @@
 <div class="container">
   <img [src]="project.imgUrl"/>
-  <div class="description">
+  <div class="details">
     <h2>{{ project.title }}</h2>
     <p>{{ project.description }}</p>
+    <a *ngIf="project.repoUrl" [href]="project.repoUrl" class="repoLink">
+      <i class="fab fa-2x fa-github"></i>
+    </a>
   </div>
 </div>

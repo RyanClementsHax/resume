@@ -1172,10 +1172,6 @@ classlist.js@^1.1.20150312:
   version "1.1.20150312"
   resolved "https://registry.yarnpkg.com/classlist.js/-/classlist.js-1.1.20150312.tgz#1d70842f7022f08d9ac086ce69e5b250f2c57789"
 
-classlist@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/classlist/-/classlist-2.0.0.tgz#b471a215123ee1cdc2ce11ba3ca8e090af7c9a86"
-
 clean-css@4.1.x, clean-css@^4.1.11:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.11.tgz#2ecdf145aba38f54740f26cefd0ff3e03e125d6a"

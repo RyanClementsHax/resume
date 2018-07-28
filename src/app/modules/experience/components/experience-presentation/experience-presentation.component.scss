@@ -19,8 +19,10 @@
             border-radius: 3px;
         }
 
-        .description {
-            display: inline-block;
+        .details {
+            display: flex;
+            flex-direction: column;
+            height: auto;
             width: 100%;
 
             h2 {
@@ -36,8 +38,9 @@
                 width: 30%;
             }
 
-            .description {
+            .details {
                 margin-left: $content-padding;
+                align-self: stretch;
             }
         }
     }

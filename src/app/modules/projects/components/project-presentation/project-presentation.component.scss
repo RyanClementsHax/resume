@@ -19,25 +19,41 @@
             border-radius: 3px;
         }
     
-        .description {
-            display: inline-block;
+        .details {
+            display: flex;
+            flex-direction: column;
+            height: auto;
             width: 100%;
     
             h2 {
                 margin: 0;
             }
+
+            .repoLink {
+                display: inline-block;
+                align-self: flex-end;
+                margin-top: auto;
+
+                &:visited {
+                    color: initial;
+                }
+            }
         }
     
         @media screen and (min-width: $small-screen-break-point) {
             flex-direction: row;
-            align-items: flex-start;
     
             img {
                 width: 30%;
             }
     
-            .description {
+            .details {
                 margin-left: $content-padding;
+                align-self: stretch;
+
+                .repoLink {
+                    margin-top: auto;
+                }
             }
         }
     }
