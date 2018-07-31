@@ -10,13 +10,13 @@
         max-width: $content-width;
         padding: $content-padding;
         border: $light-border;
-        border-radius: 3px;
+        border-radius: $default-border-radius;
         box-shadow: $default-box-shadow;
 
         img {
             width: 100%;
             max-width: 100%;
-            border-radius: 3px;
+            border-radius: $default-border-radius;
         }
 
         .details {
@@ -27,6 +27,20 @@
 
             h2 {
                 margin: 0;
+            }
+
+            .details-footer {
+                margin-top: auto;
+
+                .tech {
+                    display: inline-block;
+                    padding: 0 5px;
+                    margin-top: 3px;
+                    margin-right: 3px;
+                    border-radius: $default-border-radius;
+                    background: $color-background-grey;
+                    color: $color-accent;
+                }
             }
         }
 

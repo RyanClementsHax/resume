@@ -1,7 +1,12 @@
-<div class="container">
+<article class="container">
   <img [src]="experience.imgUrl"/>
   <div class="details">
     <h2>{{ experience.title }}</h2>
     <p>{{ experience.description }}</p>
+    <div class="details-footer">
+      <span class="tech" *ngFor="let tech of experience.technologies">
+        {{ tech }}
+      </span>
+    </div>
   </div>
-</div>
+</article>

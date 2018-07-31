@@ -6,7 +6,8 @@
 
     h1 {
         text-align: center;
-        margin: 50px 0px;
+        margin-top: 50px - $content-padding;
+        margin-bottom: 50px;
     }
     
     .project-list {
@@ -14,7 +15,7 @@
         flex-direction: column;
         align-items: center;
 
-        article {
+        project-presentation {
             margin-bottom: 50px;
         }
     }

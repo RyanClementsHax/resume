@@ -1,10 +1,15 @@
-<div class="container">
+<article class="container">
   <img [src]="project.imgUrl"/>
   <div class="details">
     <h2>{{ project.title }}</h2>
     <p>{{ project.description }}</p>
-    <a *ngIf="project.repoUrl" [href]="project.repoUrl" class="repoLink">
-      <i class="fab fa-2x fa-github"></i>
-    </a>
+    <div class="details-footer">
+      <span class="tech" *ngFor="let tech of project.technologies">
+        {{ tech }}
+      </span>
+      <a *ngIf="project.repoUrl" [href]="project.repoUrl" class="repoLink">
+        <i class="fab fa-2x fa-github"></i>
+      </a>
+    </div>
   </div>
-</div>
+</article>
