@@ -24,9 +24,29 @@
             flex-direction: column;
             height: auto;
             width: 100%;
-    
-            h2 {
-                margin: 0;
+            
+
+            .url {
+                display: inline-block;
+                margin-left: auto;
+
+                &:visited {
+                    color: initial;
+                }
+            }
+
+            .details-header {
+                display: flex;
+                align-items: center;
+                margin-top:  $content-padding;
+
+                h2 {
+                    margin: 0;
+                }
+
+                .projectUrl {
+                    align-self: flex-start;
+                }
             }
 
             .details-footer {
@@ -41,15 +61,6 @@
                     background: $color-background-grey;
                     color: $color-accent;
                 }
-
-                .repoLink {
-                    display: inline-block;
-                    margin-left: auto;
-    
-                    &:visited {
-                        color: initial;
-                    }
-                }
             }
         }
     
@@ -63,6 +74,10 @@
             .details {
                 margin-left: $content-padding;
                 align-self: stretch;
+
+                .details-header {
+                    margin-top: 0;
+                }
 
                 .details-footer {
                     margin-top: auto;
