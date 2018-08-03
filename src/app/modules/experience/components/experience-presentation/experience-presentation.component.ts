@@ -9,6 +9,8 @@ import { Experience } from '../../services/experience.service';
 export class ExperiencePresentationComponent {
   @Input() experience: Experience = {
     title: '',
+    company: '',
+    position: '',
     startDate: null,
     endDate: null,
     description: '',

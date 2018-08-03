@@ -28,26 +28,56 @@
             .details-header {
                 margin-top:  $content-padding;
 
-                h2 {
+                h2, h3 {
                     margin: 0;
                 }
 
-                .date-range {
-                    margin-left: auto;
+                .subtitle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    font-size: 0.9em;
                 }
             }
 
             .details-footer {
                 margin-top: auto;
 
-                .tech {
-                    display: inline-block;
-                    padding: 0 5px;
-                    margin-top: 3px;
-                    margin-right: 3px;
-                    border-radius: $default-border-radius;
-                    background: $color-background-grey;
-                    color: $color-accent;
+                .linkUrls {
+                    display: flex;
+                    
+                    .disabled-wrapper {
+                        cursor: not-allowed;
+                    }
+    
+                    .linkUrl {
+                        margin-right: 5px;
+
+                        &.disabled {
+                            pointer-events: none;
+                            opacity: 0.5;
+                        }
+        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .technologies {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: start;
+
+                    .tech {
+                        display: inline-block;
+                        padding: 0 5px;
+                        margin-top: 3px;
+                        margin-right: 3px;
+                        border-radius: $default-border-radius;
+                        background: $color-background-grey;
+                        color: $color-accent;
+                    }
                 }
             }
         }
