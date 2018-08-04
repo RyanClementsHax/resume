@@ -11,6 +11,7 @@ export const ROUTES: Routes = [
   { path: 'about-me', component: AboutMeComponent },
   { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule' },
   { path: 'experience', loadChildren: './modules/experience/experience.module#ExperienceModule' },
+  { path: 'contact-me', loadChildren: './modules/contact-me/contact-me.module#ContactMeModule' },
   { path: '**', pathMatch: 'full', redirectTo: 'about-me' }
 ];
 

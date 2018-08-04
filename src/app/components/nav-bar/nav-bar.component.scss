@@ -6,6 +6,7 @@ $button-border-right: 5px;
     height: $nav-bar-height;
     width: 100%;
     background: $color-background-main;
+    z-index: 999;
 
     .nav-bar {
         display: flex;
@@ -36,7 +37,6 @@ $button-border-right: 5px;
     
         .nav-button {
             display: block;
-            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: .2em;
             padding: $text-padding;
@@ -55,22 +55,26 @@ $button-border-right: 5px;
                 border-right: $button-border-right solid $color-accent;
                 padding-right: calc(#{$text-padding} - #{$button-border-right});
             }
-        }
-    
-        .nav-toggle {
-            cursor: pointer;
-            padding: 0 $text-padding;
-            margin-left: auto;
-            border: 0;
-            background: $color-background-main;
-        
-            svg {
-                width: 2rem;
-                height: 2rem;
-            }
 
-            &.expanded {
-                background: $color-primary-faded;
+            &.nav-brand {
+                font-weight: 800;
+            }
+    
+            &.nav-toggle {
+                cursor: pointer;
+                padding: 0 $text-padding;
+                margin-left: auto;
+                border: 0;
+                background: $color-background-main;
+            
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+    
+                &.expanded {
+                    background: $color-primary-faded;
+                }
             }
         }
     }

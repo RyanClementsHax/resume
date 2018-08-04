@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.jumbotron {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: $jumbotron-height;
+    padding: $content-padding;
+    background: $color-primary-faded;
+
+    h1 {
+        margin: 0;
+
+        .quote {
+            color: $color-accent;
+        }
+    }
+
+    p {
+        position: absolute;
+        margin: 0 auto;
+        bottom: 15px;
+    }
+}
