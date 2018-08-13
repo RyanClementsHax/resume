@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Router, NavigationStart } from '@angular/router';
 
-import { NavBarComponent } from './nav-bar.component';
 import { Subject } from 'rxjs';
+
+import { NavBarComponent } from './nav-bar.component';
 
 class MockRouter {
   events = new Subject();

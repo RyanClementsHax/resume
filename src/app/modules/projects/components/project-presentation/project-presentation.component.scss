@@ -31,7 +31,7 @@
                 margin-left: auto;
 
                 &:visited {
-                    color: initial;
+                    color: black;
                 }
             }
 
@@ -44,7 +44,7 @@
                     margin: 0;
                 }
 
-                .projectUrl {
+                .project-url {
                     align-self: flex-start;
                 }
             }
@@ -60,6 +60,12 @@
                     border-radius: $default-border-radius;
                     background: $color-background-grey;
                     color: $color-accent;
+                }
+
+                .repo-url {
+                    i {
+                        color: black;
+                    }
                 }
             }
         }

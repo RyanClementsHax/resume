@@ -18,9 +18,10 @@ html, body {
   line-height: 1.5;
 }
 
-a, button {
+a, button, i {
   text-decoration: none;
   outline: 0;
+  color: $color-text-primary;
 }
 
 h1 {

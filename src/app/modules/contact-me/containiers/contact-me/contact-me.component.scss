@@ -25,3 +25,9 @@
         bottom: 15px;
     }
 }
+
+article {
+    margin: auto;
+    max-width: $content-width;
+    padding: $content-padding;
+}

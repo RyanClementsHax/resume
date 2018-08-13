@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ContactMeComponent } from './containiers/contact-me/contact-me.component';
+import { SocialMediaLinkComponent } from './components/social-media-link/social-media-link.component';
 
 export const ROUTES: Routes = [
   { path: '', component: ContactMeComponent }
@@ -13,6 +14,6 @@ export const ROUTES: Routes = [
     CommonModule,
     RouterModule.forChild(ROUTES)
   ],
-  declarations: [ContactMeComponent]
+  declarations: [ContactMeComponent, SocialMediaLinkComponent]
 })
 export class ContactMeModule {}

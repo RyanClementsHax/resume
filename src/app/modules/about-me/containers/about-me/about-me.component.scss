@@ -20,10 +20,26 @@
     }
 }
 
-article {
-    .paragraphWrapper {
-        margin: auto;
-        max-width: $content-width;
-        padding: $content-padding;
+.content-header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    
+    h2 {
+        margin: 0;
     }
+
+    a {
+        margin-left: auto;
+
+        &:visited {
+            color: initial;
+        }
+    }
+}
+
+article {
+    margin: auto;
+    max-width: $content-width;
+    padding: $content-padding;
 }
