@@ -26,8 +26,57 @@
     }
 }
 
-article {
-    margin: auto;
-    max-width: $content-width;
-    padding: $content-padding;
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+
+    h2 {
+        margin: 0;
+        margin-left: 30px;
+        font-size: 3em;
+    }
+
+    h2, i {
+        color: white;
+    }
+
+    &.github-link {
+        background: #24292e;
+    }
+
+    &.twitter-link {
+        background: #1da1f2;
+    }
+
+    &.linkedin-link {
+        background: #0077b5;
+    }
+
+    &.gmail-link {
+        background: #d93025;
+    }
+
+    &:hover {
+        &.github-link {
+            background-image: url('/assets/img/header.jpg');
+            background-size: cover;
+        }
+    
+        &.twitter-link {
+            background-image: url('/assets/img/header.jpg');
+            background-size: cover;
+        }
+    
+        &.linkedin-link {
+            background-image: url('/assets/img/header.jpg');
+            background-size: cover;
+        }
+    
+        &.gmail-link {
+            background-image: url('/assets/img/header.jpg');
+            background-size: cover;
+        }
+    }
 }
