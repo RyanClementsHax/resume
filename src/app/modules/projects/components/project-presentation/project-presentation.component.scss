@@ -72,6 +72,7 @@
     
         @media screen and (min-width: $small-screen-break-point) {
             flex-direction: row;
+            align-items: start;
     
             img {
                 width: 30%;

@@ -27,6 +27,29 @@ export class ExperienceService {
     this.experiences$ = of(
       [
         {
+          title: 'NU Nav',
+          company: 'Ultimate Software',
+          position: 'Intern',
+          startDate: new Date(2018, 5),
+          endDate: new Date(2018, 8),
+          description: `Ideated and implemented a design for an admin application 
+            used to manage the complex data of a cross-domain menu structure using Stencil.js and Angular 5.`,
+          technologies: ['Stencil.js', 'Angular 5', 'Web Components'],
+          imgUrl: '/assets/img/ultimate-software-logo.jpg'
+        },
+        {
+          title: 'Transactor',
+          company: 'Infinite Energy',
+          position: 'Intern',
+          startDate: new Date(2017, 8),
+          endDate: new Date(2017, 12),
+          description: `Maintained a C# back end system called Transactor responsible for processing thousands of 
+            customer energy usage data. Improved the company's internal tool used to manage customers and their data 
+            by adding features that assisted customer representatives in delivering unparalleled customer service.`,
+          technologies: ['C#', 'ASP.NET'],
+          imgUrl: '/assets/img/infinite-energy-logo.png'
+        },
+        {
           title: 'UltiDash',
           company: 'Ultimate Software',
           position: 'Intern',
@@ -35,6 +58,23 @@ export class ExperienceService {
           description: `I collaborated to develop an internal standup tool called UltiDash which integrated into Jira and the Aha! API's.`,
           technologies: ['C#', 'Angular', 'Web Api', 'Unity', 'Entity'],
           imgUrl: '/assets/img/ultimate-software-logo.jpg'
+        },
+        {
+          title: 'Customer Website',
+          company: 'Infinite Energy',
+          position: 'Intern',
+          startDate: new Date(2016, 8),
+          endDate: new Date(2017, 5),
+          description: `Engineered the payment feature on the company website so the customers can make payments and 
+            manage payment options.`,
+          technologies: ['Angular.js v1.6', 'C#', 'Web Api', 'Unity', 'Entity'],
+          imgUrl: '/assets/img/infinite-energy-logo.png',
+          linkUrls: [
+            {
+              url: 'https://my.infiniteenergy.com/#!/login#shell',
+              text: 'Live website'
+            }
+          ]
         },
         {
           title: 'Infinite Energy Industrial',

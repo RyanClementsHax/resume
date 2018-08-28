@@ -21,7 +21,7 @@ export class ProjectsService {
           title: 'This Website!',
           description: 'When it came time to think about career fair, I thought, "Why not build my own website!??!", and here we are.',
           technologies: ['Angular 6', 'rxjs'],
-          imgUrl: '/assets/img/header.jpg',
+          imgUrl: '/assets/img/website.PNG',
           projectUrl: 'http://localhost:4200',
           repoUrl: 'https://github.com/RyanClementsHax/resume'
         },
@@ -29,7 +29,7 @@ export class ProjectsService {
           title: 'Workout Planner Android App',
           description: 'I was tired of the overly complex workout apps on the app store so I built my own and had fun doing it.',
           technologies: ['Android', 'Java'],
-          imgUrl: '/assets/img/header.jpg',
+          imgUrl: '/assets/img/workout-app-android.png',
           repoUrl: 'https://github.com/RyanClementsHax/WorkoutPlanner'
         }
       ]
