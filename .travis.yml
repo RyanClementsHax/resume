@@ -11,6 +11,7 @@ before_script:
 
 script:
   - ng build --prod
+  - ng test
 
 notifications:
   email:
