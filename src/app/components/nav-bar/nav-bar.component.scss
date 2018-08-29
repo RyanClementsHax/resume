@@ -1,0 +1,105 @@
+@import "variables.scss";
+
+$button-border-right: 5px;
+
+:host {
+    height: $nav-bar-height;
+    width: 100%;
+    background: $color-background-main;
+    z-index: 999;
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        border-bottom: $light-border;
+        box-shadow: $default-box-shadow;
+    
+        .small-nav-container {
+            display: flex;
+        }
+    
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: max-height 250ms;
+        }
+    
+        .link-container {
+            cursor: pointer;
+            display: inline-block;
+            background: $color-background-main;
+            border-top: $light-border;
+        }
+    
+        .nav-button {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            padding: $text-padding;
+            -webkit-appearance: none;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover, &.active {
+                color: $color-primary;
+                background-color: $color-primary-faded;
+            }
+
+            &:hover {
+                border-right: $button-border-right solid $color-accent;
+                padding-right: calc(#{$text-padding} - #{$button-border-right});
+            }
+
+            &.nav-brand {
+                font-weight: 800;
+            }
+    
+            &.nav-toggle {
+                cursor: pointer;
+                padding: 0 $text-padding;
+                margin-left: auto;
+                border: 0;
+                background: $color-background-main;
+            
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+    
+                &.expanded {
+                    background: $color-primary-faded;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $small-screen-break-point) {
+        .nav-bar {
+            flex-direction: row;
+    
+            .nav-links {
+                display: block;
+                margin-left: auto;
+                overflow: visible;
+
+                .link-container {
+                    border-top: none;
+                }
+            }
+        
+            .nav-toggle {
+                display: none;
+                margin-left: auto;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+        }
+    }
+}

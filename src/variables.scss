@@ -1,0 +1,23 @@
+$color-primary: #0f4880;
+$color-accent: #D47500;
+$color-primary-faded: transparentize($color: $color-primary, $amount: 0.9);
+$color-text-primary: #545e6f;
+$color-background-main: white;
+$color-background-grey: #ededed;
+
+$default-box-shadow: 3px 3px 4px rgba(0,0,0,0.1);
+
+$content-width: 600px;
+
+$text-padding: 15px;
+$content-padding: 15px;
+
+$default-border-radius: 3px;
+$light-border-height: 1px;
+$light-border: $light-border-height solid rgba(0,0,0,.125);
+
+$nav-bar-height: calc(2 * #{$text-padding} + 1.5rem + #{$light-border-height});
+// IE doesn't support nested calc calls
+$jumbotron-height: calc(100vh - (2 * #{$text-padding} + 1.5rem + #{$light-border-height}));
+
+$small-screen-break-point: 45em;

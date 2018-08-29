@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font: 300 16px/1.4  "Titillium Web", "monospace", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: $color-text-primary;
+  display: flex;
+  line-height: 1.5;
+}
+
+a, button, i {
+  text-decoration: none;
+  outline: 0;
+  color: $color-text-primary;
+}
+
+h1 {
+  font-size: 3rem;
+}

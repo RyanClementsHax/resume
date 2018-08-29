@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+:host {
+    position: relative;
+    width: 100%;
+    padding-top: $nav-bar-height;
+
+    nav-bar {
+        position: fixed;
+        top: 0;
+    }
+
+    footer {
+        height: 50px;
+        border-top: $light-border;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+
+        .copyRight {
+            padding-left: 1rem;
+        }
+    }
+}
