@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "8.10"
 
+addons:
+  chrome: stable
+
 branches:
   only:
     - master
@@ -10,8 +13,8 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod
-  - ng test
+  - npm run build:prod
+  - npm run test
 
 notifications:
   email:

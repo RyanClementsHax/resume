@@ -8,7 +8,7 @@ import { ParallaxConfig } from 'ngx-parallax';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
-  private parallaxConfig: ParallaxConfig = {
+  parallaxConfig: ParallaxConfig = {
     ratio: -0.2
   };
 }

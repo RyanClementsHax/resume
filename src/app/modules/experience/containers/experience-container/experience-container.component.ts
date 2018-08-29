@@ -10,7 +10,7 @@ import { ExperienceService, Experience } from '../../services/experience.service
   styleUrls: ['./experience-container.component.scss']
 })
 export class ExperienceContainerComponent {
-  private experiences$: Observable<Experience[]>;
+  experiences$: Observable<Experience[]>;
 
   constructor(private experienceSerivce: ExperienceService) {
     this.experiences$ = this.experienceSerivce.getExperiences();

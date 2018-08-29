@@ -10,7 +10,7 @@ import { ProjectsService, Project } from '../../services/projects.service';
   styleUrls: ['./projects-container.component.scss']
 })
 export class ProjectsContainerComponent {
-  private projects$: Observable<Project[]>;
+  projects$: Observable<Project[]>;
 
   constructor(private projectsService: ProjectsService) {
     this.projects$ = this.projectsService.getProjects();
