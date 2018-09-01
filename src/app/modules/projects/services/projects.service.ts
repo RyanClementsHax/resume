@@ -29,7 +29,7 @@ export class ProjectsService {
           title: 'Workout Planner Android App',
           description: 'I was tired of the overly complex workout apps on the app store so I built my own and had fun doing it.',
           technologies: ['Android', 'Java'],
-          imgUrl: 'assets/img/workout-app-android.png',
+          imgUrl: '/assets/img/workout-app-android.png',
           repoUrl: 'https://github.com/RyanClementsHax/WorkoutPlanner'
         }
       ]
