@@ -35,7 +35,7 @@ export class ExperienceService {
           description: `Ideated and implemented a design for an admin application 
             used to manage the complex data of a cross-domain menu structure using Stencil.js and Angular 5.`,
           technologies: ['Stencil.js', 'Angular 5', 'Web Components'],
-          imgUrl: 'https://ryanclementshax.github.io/resume/assets/img/ultimate-software-logo.jpg'
+          imgUrl: 'assets/img/ultimate-software-logo.jpg'
         },
         {
           title: 'Transactor',
