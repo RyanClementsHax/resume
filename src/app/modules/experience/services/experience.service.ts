@@ -47,7 +47,7 @@ export class ExperienceService {
             customer energy usage data. Improved the company's internal tool used to manage customers and their data 
             by adding features that assisted customer representatives in delivering unparalleled customer service.`,
           technologies: ['C#', 'ASP.NET'],
-          imgUrl: 'https://ryanclementshax.github.io/resume/assets/img/infinite-energy-logo.png'
+          imgUrl: 'assets/img/infinite-energy-logo.png'
         },
         {
           title: 'UltiDash',
@@ -57,7 +57,7 @@ export class ExperienceService {
           endDate: new Date(2017, 8),
           description: `I collaborated to develop an internal standup tool called UltiDash which integrated into Jira and the Aha! API's.`,
           technologies: ['C#', 'Angular', 'Web Api', 'Unity', 'Entity'],
-          imgUrl: 'https://ryanclementshax.github.io/resume/assets/img/ultimate-software-logo.jpg'
+          imgUrl: 'assets/img/ultimate-software-logo.jpg'
         },
         {
           title: 'Customer Website',
@@ -68,7 +68,7 @@ export class ExperienceService {
           description: `Engineered the payment feature on the company website so the customers can make payments and 
             manage payment options.`,
           technologies: ['Angular.js v1.6', 'C#', 'Web Api', 'Unity', 'Entity'],
-          imgUrl: 'https://ryanclementshax.github.io/resume/assets/img/infinite-energy-logo.png',
+          imgUrl: 'assets/img/infinite-energy-logo.png',
           linkUrls: [
             {
               url: 'https://my.infiniteenergy.com/#!/login#shell',
@@ -84,7 +84,7 @@ export class ExperienceService {
           endDate: new Date(2016, 10),
           description: 'I made a killer custom hybrid app with a fully functional back end and admin web app to manage it',
           technologies: ['Angular 1.6', 'Cordova', 'Bootstrap', 'C#', 'Web Api', 'Entity', 'Unity', 'Unit Testing'],
-          imgUrl: 'https://ryanclementshax.github.io/resume/assets/img/infinite-energy-industrial-ios.PNG',
+          imgUrl: 'assets/img/infinite-energy-industrial-ios.PNG',
           linkUrls: [
             {
               url: 'https://play.google.com/store/apps/details?id=com.infiniteenergy.industrial.mobile&hl=en_US',
