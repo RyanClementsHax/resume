@@ -37,6 +37,9 @@ script:
   - yarn build:prod -- --base-href /resume/
   - yarn test
 
+after_script:
+  - cp dist/resume/index.html dist/resume/404.html
+
 deploy:
   provider: pages
   skip-cleanup: true
