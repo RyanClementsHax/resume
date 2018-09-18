@@ -34,7 +34,7 @@ before_script:
   - yarn global add @angular/cli
 
 script:
-  - yarn build:prod -- --base-href https://ryanclementshax.github.io/resume/
+  - yarn build:prod -- --base-href /resume/
   - yarn test
 
 deploy:
