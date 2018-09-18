@@ -34,11 +34,8 @@ before_script:
   - yarn global add @angular/cli
 
 script:
-  - yarn build:prod -- --base-href /resume/
+  - yarn build:prod
   - yarn test
-
-after_script:
-  - cp dist/resume/index.html dist/resume/404.html
 
 deploy:
   provider: pages

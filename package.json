@@ -4,7 +4,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --prod --base-href resume && cp dist/resume/index.html dist/resume/404.html",
     "test": "ng test && yarn lint",
     "lint": "ng lint"
   },
