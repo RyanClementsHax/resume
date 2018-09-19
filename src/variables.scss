@@ -17,8 +17,9 @@ $light-border-height: 1px;
 $light-border: $light-border-height solid rgba(0,0,0,.125);
 
 $nav-bar-height: calc(2 * #{$text-padding} + 1.5rem + #{$light-border-height});
-// IE doesn't support nested calc calls
-$jumbotron-height: calc(100vh - (2 * #{$text-padding} + 1.5rem + #{$light-border-height}));
-$footer-height: 51px;
+$jumbotron-height: calc(100vh - #{$nav-bar-height});
+$footer-height: calc(50px - #{$light-border-height});
+
+$min-page-height: calc(100vh - #{$nav-bar-height} - #{$footer-height});
 
 $small-screen-break-point: 45em;

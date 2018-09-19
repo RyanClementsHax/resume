@@ -8,7 +8,7 @@
     text-align: center;
     height: $jumbotron-height;
     background-image: url('/assets/img/headshot-shades-portrait.jpg');
-    background-size: 150%;
+    background-size: auto 150%;
 
     .title-container {
         padding: $content-padding;
@@ -26,28 +26,12 @@
         }
     }
     
-    @media screen and (min-width: 30em) {
-        background-size: 125%;
-    }
-    
-    @media screen and (min-width: 35em) {
-        background-size: 112%;
-    }
-    
-    @media screen and (min-width: 40em) {
-        background-size: 100%;
-    }
-    
-    @media screen and (min-width: 45em) {
+    @media screen and (min-width: 680px) {
         background-image: url('/assets/img/headshot-on-phone-1.jpg');
-        background-size: 175%;
+        background-size: auto 125%;
     }
     
-    @media screen and (min-width: 50em) {
-        background-size: 150%;
-    }
-    
-    @media screen and (min-width: 60em) {
+    @media screen and (min-width: 1280px) {
         background-size: 125%;
     }
 }

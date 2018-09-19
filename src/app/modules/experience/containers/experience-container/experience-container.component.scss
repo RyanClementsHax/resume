@@ -2,6 +2,7 @@
 
 :host {
     display: block;
+    min-height: $min-page-height;
     padding: $content-padding;
 
     h1, h2 {

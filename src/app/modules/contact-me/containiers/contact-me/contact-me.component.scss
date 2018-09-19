@@ -28,7 +28,7 @@
 
 main {
     @media screen and (min-width: $small-screen-break-point) {
-        height: calc(100vh - #{$footer-height});
+        height: $min-page-height;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
