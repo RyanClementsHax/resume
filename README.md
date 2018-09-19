@@ -14,6 +14,7 @@ This is my personal website that doubles as my resume! I wanted to start hacking
 
 * `Angular 6`
 * basic `rxjs` for data loading
+* [Jest](https://jestjs.io/) for testing
 * [Travis CI integration](https://travis-ci.org/RyanClementsHax/resume)
 * [Github pages for hosting](https://ryanclementshax.github.io/resume)
 
@@ -39,4 +40,4 @@ Run `yarn build:prod` for production build.
 
 ## Running unit tests
 
-Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io) and linting.
+Run `yarn test` to execute the unit tests via [Jest](https://jestjs.io/) and linting.
