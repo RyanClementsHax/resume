@@ -12,12 +12,6 @@ branches:
   only:
     - master
 
-install:
-  - yarn install
-
-before_script:
-  - yarn global add @angular/cli
-
 script:
   - yarn build:prod
   - yarn test
