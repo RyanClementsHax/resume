@@ -9,6 +9,7 @@ import { ParallaxConfig } from 'ngx-parallax';
 })
 export class AboutMeComponent {
   parallaxConfig: ParallaxConfig = {
+    initialValue: 50,
     ratio: -0.2
   };
 }

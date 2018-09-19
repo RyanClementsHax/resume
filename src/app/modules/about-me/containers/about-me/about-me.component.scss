@@ -7,16 +7,48 @@
     align-items: center;
     text-align: center;
     height: $jumbotron-height;
-    background-image: url('/assets/img/header.jpg');
-    background-size: cover;
+    background-image: url('/assets/img/headshot-shades-portrait.jpg');
+    background-size: 150%;
 
-    h1 {
-        margin: 0;
+    .title-container {
+        padding: $content-padding;
+        border-radius: $default-border-radius;
+        box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+        background: rgba(255, 255, 255, 0.8);
+
+        h1 {
+            margin: 0;
+        }
+    
+        h2 {
+            color: $color-accent;
+            margin: 0;
+        }
     }
-
-    h2 {
-        color: $color-accent;
-        margin: 0;
+    
+    @media screen and (min-width: 30em) {
+        background-size: 125%;
+    }
+    
+    @media screen and (min-width: 35em) {
+        background-size: 112%;
+    }
+    
+    @media screen and (min-width: 40em) {
+        background-size: 100%;
+    }
+    
+    @media screen and (min-width: 45em) {
+        background-image: url('/assets/img/headshot-on-phone-1.jpg');
+        background-size: 175%;
+    }
+    
+    @media screen and (min-width: 50em) {
+        background-size: 150%;
+    }
+    
+    @media screen and (min-width: 60em) {
+        background-size: 125%;
     }
 }
 
