@@ -68,15 +68,15 @@ main {
         &.gmail-link {
             background: #d93025;
         }
-    
-        &:hover {
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        }
 
         @media screen and (min-width: $small-screen-break-point) {
             padding: 20px 50px;
             margin-top: 20px;
             border-radius: 50px;
+    
+            &:hover {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
         }
     }
 }
