@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBarComponent should match snapshot 1`] = `
+NavBarComponent {
+  "expanded": false,
+  "links": ElementRef {
+    "nativeElement": <ul
+      class="nav-links"
+      ng-reflect-klass="nav-links"
+      ng-reflect-ng-class="[object Object]"
+      ng-reflect-ng-style="[object Object]"
+      style="max-height: 0;"
+    >
+      <li
+        class="link-container"
+      >
+        <a
+          class="nav-button nav-link"
+          routerlink="/projects"
+          routerlinkactive="active"
+        >
+          Projects
+        </a>
+      </li>
+      <li
+        class="link-container"
+      >
+        <a
+          class="nav-button nav-link"
+          routerlink="/experience"
+          routerlinkactive="active"
+        >
+          Experience
+        </a>
+      </li>
+      <li
+        class="link-container"
+      >
+        <a
+          class="nav-button nav-link"
+          routerlink="/contact-me"
+          routerlinkactive="active"
+        >
+          Contact Me
+        </a>
+      </li>
+    </ul>,
+  },
+  "linksMaxHeight": 0,
+  "router": MockRouter {
+    "events": Subject {
+      "_isScalar": false,
+      "closed": false,
+      "hasError": false,
+      "isStopped": false,
+      "observers": Array [
+        FilterSubscriber {
+          "_parent": Subscriber {
+            "_parent": null,
+            "_parents": null,
+            "_subscriptions": Array [
+              [Circular],
+            ],
+            "closed": false,
+            "destination": SafeSubscriber {
+              "_complete": undefined,
+              "_context": [Circular],
+              "_error": undefined,
+              "_next": [Function],
+              "_parent": null,
+              "_parentSubscriber": [Circular],
+              "_parents": null,
+              "_subscriptions": null,
+              "closed": false,
+              "destination": Object {
+                "closed": true,
+                "complete": [Function],
+                "error": [Function],
+                "next": [Function],
+              },
+              "isStopped": false,
+              "syncErrorThrowable": false,
+              "syncErrorThrown": false,
+              "syncErrorValue": null,
+            },
+            "isStopped": false,
+            "syncErrorThrowable": true,
+            "syncErrorThrown": false,
+            "syncErrorValue": null,
+          },
+          "_parents": null,
+          "_subscriptions": Array [
+            SubjectSubscription {
+              "_parent": [Circular],
+              "_parents": null,
+              "_subscriptions": null,
+              "closed": false,
+              "subject": [Circular],
+              "subscriber": [Circular],
+            },
+          ],
+          "closed": false,
+          "count": 0,
+          "destination": Subscriber {
+            "_parent": null,
+            "_parents": null,
+            "_subscriptions": Array [
+              [Circular],
+            ],
+            "closed": false,
+            "destination": SafeSubscriber {
+              "_complete": undefined,
+              "_context": [Circular],
+              "_error": undefined,
+              "_next": [Function],
+              "_parent": null,
+              "_parentSubscriber": [Circular],
+              "_parents": null,
+              "_subscriptions": null,
+              "closed": false,
+              "destination": Object {
+                "closed": true,
+                "complete": [Function],
+                "error": [Function],
+                "next": [Function],
+              },
+              "isStopped": false,
+              "syncErrorThrowable": false,
+              "syncErrorThrown": false,
+              "syncErrorValue": null,
+            },
+            "isStopped": false,
+            "syncErrorThrowable": true,
+            "syncErrorThrown": false,
+            "syncErrorValue": null,
+          },
+          "isStopped": false,
+          "predicate": [Function],
+          "syncErrorThrowable": true,
+          "syncErrorThrown": false,
+          "syncErrorValue": null,
+          "thisArg": undefined,
+        },
+      ],
+      "thrownError": null,
+    },
+  },
+}
+`;

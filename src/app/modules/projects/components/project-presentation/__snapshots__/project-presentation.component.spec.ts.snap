@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectPresentationComponent should match snapshot 1`] = `
+ProjectPresentationComponent {
+  "project": Object {
+    "description": "",
+    "imgUrl": "",
+    "technologies": Array [],
+    "title": "",
+  },
+}
+`;

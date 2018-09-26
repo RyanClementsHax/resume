@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePageComponent should match snapshot 1`] = `
+AboutMeComponent {
+  "parallaxConfig": Object {
+    "initialValue": 50,
+    "ratio": -0.2,
+  },
+}
+`;

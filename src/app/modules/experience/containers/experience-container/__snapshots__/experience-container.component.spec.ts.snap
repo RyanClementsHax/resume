@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceContainerComponent should match snapshot 1`] = `
+ExperienceContainerComponent {
+  "experienceSerivce": MockExperienceService {
+    "experiences$": Subject {
+      "_isScalar": false,
+      "closed": false,
+      "hasError": false,
+      "isStopped": false,
+      "observers": Array [
+        Subscriber {
+          "_parent": null,
+          "_parents": null,
+          "_subscriptions": Array [
+            SubjectSubscription {
+              "_parent": [Circular],
+              "_parents": null,
+              "_subscriptions": null,
+              "closed": false,
+              "subject": [Circular],
+              "subscriber": [Circular],
+            },
+          ],
+          "closed": false,
+          "destination": SafeSubscriber {
+            "_complete": undefined,
+            "_context": Object {
+              "unsubscribe": [Function],
+            },
+            "_error": [Function],
+            "_next": [Function],
+            "_parent": null,
+            "_parentSubscriber": [Circular],
+            "_parents": null,
+            "_subscriptions": null,
+            "closed": false,
+            "destination": Object {
+              "closed": true,
+              "complete": [Function],
+              "error": [Function],
+              "next": [Function],
+            },
+            "isStopped": false,
+            "syncErrorThrowable": false,
+            "syncErrorThrown": false,
+            "syncErrorValue": null,
+          },
+          "isStopped": false,
+          "syncErrorThrowable": true,
+          "syncErrorThrown": false,
+          "syncErrorValue": null,
+        },
+      ],
+      "thrownError": null,
+    },
+  },
+  "experiences$": Subject {
+    "_isScalar": false,
+    "closed": false,
+    "hasError": false,
+    "isStopped": false,
+    "observers": Array [
+      Subscriber {
+        "_parent": null,
+        "_parents": null,
+        "_subscriptions": Array [
+          SubjectSubscription {
+            "_parent": [Circular],
+            "_parents": null,
+            "_subscriptions": null,
+            "closed": false,
+            "subject": [Circular],
+            "subscriber": [Circular],
+          },
+        ],
+        "closed": false,
+        "destination": SafeSubscriber {
+          "_complete": undefined,
+          "_context": Object {
+            "unsubscribe": [Function],
+          },
+          "_error": [Function],
+          "_next": [Function],
+          "_parent": null,
+          "_parentSubscriber": [Circular],
+          "_parents": null,
+          "_subscriptions": null,
+          "closed": false,
+          "destination": Object {
+            "closed": true,
+            "complete": [Function],
+            "error": [Function],
+            "next": [Function],
+          },
+          "isStopped": false,
+          "syncErrorThrowable": false,
+          "syncErrorThrown": false,
+          "syncErrorValue": null,
+        },
+        "isStopped": false,
+        "syncErrorThrowable": true,
+        "syncErrorThrown": false,
+        "syncErrorValue": null,
+      },
+    ],
+    "thrownError": null,
+  },
+}
+`;
