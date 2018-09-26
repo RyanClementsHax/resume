@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router, NavigationStart } from '@angular/router';
 
 import { Subject } from 'rxjs';
@@ -14,7 +14,7 @@ describe('NavBarComponent', () => {
   let fixture: ComponentFixture<NavBarComponent>;
   let router: MockRouter;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     router = new MockRouter();
 
     TestBed.configureTestingModule({
@@ -22,16 +22,14 @@ describe('NavBarComponent', () => {
       providers: [{ provide: Router, useValue: router }]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(NavBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should match snapshot', () => {
+    expect(component).toMatchSnapshot();
   });
 
   it('should set expanded to false by default', () => {

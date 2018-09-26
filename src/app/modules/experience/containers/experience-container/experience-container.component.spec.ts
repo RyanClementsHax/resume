@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { Subject } from 'rxjs';
@@ -19,7 +19,7 @@ describe('ExperienceContainerComponent', () => {
   let fixture: ComponentFixture<ExperienceContainerComponent>;
   let mockExperienceService;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     mockExperienceService = new MockExperienceService();
 
     TestBed.configureTestingModule({
@@ -28,15 +28,12 @@ describe('ExperienceContainerComponent', () => {
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
-  }));
-
-  beforeEach(() => {
     fixture = TestBed.createComponent(ExperienceContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should match snapshot', () => {
+    expect(component).toMatchSnapshot();
   });
 });
