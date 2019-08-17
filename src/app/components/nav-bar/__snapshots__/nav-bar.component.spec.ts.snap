@@ -55,9 +55,8 @@ NavBarComponent {
       "isStopped": false,
       "observers": Array [
         FilterSubscriber {
-          "_parent": Subscriber {
-            "_parent": null,
-            "_parents": null,
+          "_parentOrParents": Subscriber {
+            "_parentOrParents": null,
             "_subscriptions": Array [
               [Circular],
             ],
@@ -67,9 +66,8 @@ NavBarComponent {
               "_context": [Circular],
               "_error": undefined,
               "_next": [Function],
-              "_parent": null,
+              "_parentOrParents": null,
               "_parentSubscriber": [Circular],
-              "_parents": null,
               "_subscriptions": null,
               "closed": false,
               "destination": Object {
@@ -88,11 +86,9 @@ NavBarComponent {
             "syncErrorThrown": false,
             "syncErrorValue": null,
           },
-          "_parents": null,
           "_subscriptions": Array [
             SubjectSubscription {
-              "_parent": [Circular],
-              "_parents": null,
+              "_parentOrParents": [Circular],
               "_subscriptions": null,
               "closed": false,
               "subject": [Circular],
@@ -102,8 +98,7 @@ NavBarComponent {
           "closed": false,
           "count": 0,
           "destination": Subscriber {
-            "_parent": null,
-            "_parents": null,
+            "_parentOrParents": null,
             "_subscriptions": Array [
               [Circular],
             ],
@@ -113,9 +108,8 @@ NavBarComponent {
               "_context": [Circular],
               "_error": undefined,
               "_next": [Function],
-              "_parent": null,
+              "_parentOrParents": null,
               "_parentSubscriber": [Circular],
-              "_parents": null,
               "_subscriptions": null,
               "closed": false,
               "destination": Object {
