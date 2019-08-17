@@ -9,22 +9,31 @@ import { AboutMeModule } from './modules/about-me/about-me.module';
 
 export const ROUTES: Routes = [
   { path: 'about-me', component: AboutMeComponent },
-  { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule' },
-  { path: 'experience', loadChildren: './modules/experience/experience.module#ExperienceModule' },
-  { path: 'contact-me', loadChildren: './modules/contact-me/contact-me.module#ContactMeModule' },
+  {
+    path: 'projects',
+    loadChildren: () =>
+      import('./modules/projects/projects.module').then(m => m.ProjectsModule)
+  },
+  {
+    path: 'experience',
+    loadChildren: () =>
+      import('./modules/experience/experience.module').then(
+        m => m.ExperienceModule
+      )
+  },
+  {
+    path: 'contact-me',
+    loadChildren: () =>
+      import('./modules/contact-me/contact-me.module').then(
+        m => m.ContactMeModule
+      )
+  },
   { path: '**', pathMatch: 'full', redirectTo: 'about-me' }
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavBarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AboutMeModule,
-    RouterModule.forRoot(ROUTES)
-  ],
+  declarations: [AppComponent, NavBarComponent],
+  imports: [BrowserModule, AboutMeModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements AfterViewInit {
-  @ViewChild('links') links: ElementRef;
+  @ViewChild('links', { static: false }) links: ElementRef;
 
   expanded = false;
   linksMaxHeight: number;

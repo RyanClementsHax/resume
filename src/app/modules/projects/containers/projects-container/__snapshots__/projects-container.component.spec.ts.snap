@@ -9,12 +9,10 @@ ProjectsContainerComponent {
     "isStopped": false,
     "observers": Array [
       Subscriber {
-        "_parent": null,
-        "_parents": null,
+        "_parentOrParents": null,
         "_subscriptions": Array [
           SubjectSubscription {
-            "_parent": [Circular],
-            "_parents": null,
+            "_parentOrParents": [Circular],
             "_subscriptions": null,
             "closed": false,
             "subject": [Circular],
@@ -29,9 +27,8 @@ ProjectsContainerComponent {
           },
           "_error": [Function],
           "_next": [Function],
-          "_parent": null,
+          "_parentOrParents": null,
           "_parentSubscriber": [Circular],
-          "_parents": null,
           "_subscriptions": null,
           "closed": false,
           "destination": Object {
@@ -61,12 +58,10 @@ ProjectsContainerComponent {
       "isStopped": false,
       "observers": Array [
         Subscriber {
-          "_parent": null,
-          "_parents": null,
+          "_parentOrParents": null,
           "_subscriptions": Array [
             SubjectSubscription {
-              "_parent": [Circular],
-              "_parents": null,
+              "_parentOrParents": [Circular],
               "_subscriptions": null,
               "closed": false,
               "subject": [Circular],
@@ -81,9 +76,8 @@ ProjectsContainerComponent {
             },
             "_error": [Function],
             "_next": [Function],
-            "_parent": null,
+            "_parentOrParents": null,
             "_parentSubscriber": [Circular],
-            "_parents": null,
             "_subscriptions": null,
             "closed": false,
             "destination": Object {
