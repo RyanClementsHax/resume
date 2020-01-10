@@ -26,6 +26,18 @@ export class ExperienceService {
   constructor() {
     this.experiences$ = of([
       {
+        title: 'Common Messaging Platform',
+        company: 'Ultimate Software',
+        position: 'Intern',
+        startDate: new Date(2019, 5),
+        endDate: new Date(2019, 8),
+        description: `Deployed and managed in house messaging systems for the rest of the domain teams in the company to use. Such systems
+         and libraries include a Schema Registry, Kafka connect libraries, encryption/decryption libraries, RabbitMQ libraries, and spring
+         starter libraries. All of this is written in Java using Spring`,
+        technologies: ['Kafka', 'RabbitMQ', 'Spring', 'Java'],
+        imgUrl: 'assets/img/kafka-logo.png'
+      },
+      {
         title: 'NU Nav',
         company: 'Ultimate Software',
         position: 'Intern',
