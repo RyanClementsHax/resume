@@ -1,30 +1,42 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Injectable } from '@angular/core'
+import { Observable, of } from 'rxjs'
 
 export interface LinkUrl {
-  url: string;
-  text: string;
-  disabledTitle?: string;
+  url: string
+  text: string
+  disabledTitle?: string
 }
 
 export interface Experience {
-  title: string;
-  company: string;
-  position: string;
-  startDate: Date;
-  endDate: Date;
-  description: string;
-  technologies: string[];
-  imgUrl: string;
-  linkUrls?: LinkUrl[];
+  title: string
+  company: string
+  position: string
+  startDate: Date
+  endDate: Date
+  description: string
+  technologies: string[]
+  imgUrl: string
+  linkUrls?: LinkUrl[]
 }
 
 @Injectable()
 export class ExperienceService {
-  private experiences$: Observable<Experience[]>;
+  private experiences$: Observable<Experience[]>
 
   constructor() {
     this.experiences$ = of([
+      {
+        title: 'FtpDownloads',
+        company: 'Infinite Energy',
+        position: 'Intern',
+        startDate: new Date(2019, 8),
+        endDate: new Date(2020, 5),
+        description: `Developed from scratch a service to handle file transfers of various sizes between us and third party
+         systems. The microservice dealt with problems such as legacy code integration, message queues, connection
+         management, Kubernetes, and Docker.`,
+        technologies: ['.NET Core', 'C#', 'Microservice', 'Entity', 'RabbitMQ', 'Docker', 'Kubernetes'],
+        imgUrl: 'assets/img/infinite-energy-logo.png'
+      },
       {
         title: 'Common Messaging Platform',
         company: 'Ultimate Software',
@@ -120,10 +132,10 @@ export class ExperienceService {
           }
         ]
       }
-    ]);
+    ])
   }
 
   getExperiences() {
-    return this.experiences$;
+    return this.experiences$
   }
 }
