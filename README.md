@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/RyanClementsHax/resume.svg?branch=master)](https://travis-ci.org/RyanClementsHax/resume)
+[![Build Status](https://travis-ci.com/RyanClementsHax/resume.svg?branch=master)](https://travis-ci.com/RyanClementsHax/resume)
 
 # Resume
 
