@@ -21,7 +21,7 @@
     "core-js": "^2.5.7",
     "ngx-parallax": "^4.0.0",
     "rxjs": "^6.5.2",
-    "tslib": "^2.0.1",
+    "tslib": "1.10.0",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
