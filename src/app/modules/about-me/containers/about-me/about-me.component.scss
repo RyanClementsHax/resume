@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     height: $jumbotron-height;
-    background-image: url('~/assets/img/headshot-shades-portrait.jpg');
+    background-image: url('../../../../../assets/img/headshot-shades-portrait.jpg');
     background-size: auto 150%;
 
     .title-container {
@@ -27,8 +27,8 @@
         }
     }
     
-    @media screen and (min-width: 680px) {
-        background-image: url('~/assets/img/headshot-on-phone.jpg');
+    @media screen and (min-width: 600px) {
+        background-image: url('../../../../../assets/img/headshot-on-phone.jpg');
         background-size: auto 125%;
     }
     
