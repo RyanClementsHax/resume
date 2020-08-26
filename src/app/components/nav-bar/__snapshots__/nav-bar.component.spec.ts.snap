@@ -6,9 +6,6 @@ NavBarComponent {
   "links": ElementRef {
     "nativeElement": <ul
       class="nav-links"
-      ng-reflect-klass="nav-links"
-      ng-reflect-ng-class="[object Object]"
-      ng-reflect-ng-style="[object Object]"
       style="max-height: 0;"
     >
       <li
