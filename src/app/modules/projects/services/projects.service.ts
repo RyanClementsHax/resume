@@ -21,14 +21,14 @@ export class ProjectsService {
         description: `What started off as a senior project turned into a favorite pastime with a few friends of mine.
          This app handles the contact management for the church I went to in undergrad and is designed to help new
           freshmen get on their feet with software engineering.`,
-        technologies: ['React', 'Redux', 'Firebase', 'rxjs', 'Docker', 'MaterialUI'],
+        technologies: ['React', 'Redux', 'Typescript', 'Firebase', 'rxjs', 'Docker', 'MaterialUI', 'Travis CI'],
         imgUrl: 'assets/img/cg-admin-app.PNG',
         repoUrl: 'https://github.com/CatholicGators/CatholicGatorsAdminApp'
       },
       {
         title: 'This Website!',
         description: 'When it came time to think about career fair, I thought, "Why not build my own website!??!", and here we are.',
-        technologies: ['Angular 6', 'rxjs'],
+        technologies: ['Angular 10', 'rxjs', 'Travis CI', 'Github Pages'],
         imgUrl: 'assets/img/website.PNG',
         projectUrl: 'https://ryanclementshax.github.io/resume',
         repoUrl: 'https://github.com/RyanClementsHax/resume'

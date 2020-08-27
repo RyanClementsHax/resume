@@ -12,7 +12,7 @@ export interface Experience {
   company: string
   position: string
   startDate: Date
-  endDate: Date
+  endDate?: Date
   description: string
   technologies: string[]
   imgUrl: string
@@ -26,15 +26,26 @@ export class ExperienceService {
   constructor() {
     this.experiences$ = of([
       {
+        title: 'Renewals and Retentions Revamp',
+        company: 'Infinite Energy',
+        position: 'Dev Assistant',
+        startDate: new Date(2020, 4),
+        description: `Innovated and revamped the legacy system that the Renewals and Retentions (RnR) team, uses to keep track
+         of the company's accounts that need to be renewed or retained. My primary responsibily was being the front end tech lead
+         and pioneered the company's adoption of the new front end tech stack.`,
+        technologies: ['React', 'Redux', 'Redux Toolkit', '.NET Core', 'C#', 'Entity DB First', 'Kubernetes'],
+        imgUrl: 'assets/img/infinite-energy-logo.png'
+      },
+      {
         title: 'FtpDownloads',
         company: 'Infinite Energy',
         position: 'Intern',
         startDate: new Date(2019, 8),
-        endDate: new Date(2020, 5),
+        endDate: new Date(2020, 4),
         description: `Developed from scratch a service to handle file transfers of various sizes between us and third party
          systems. The microservice dealt with problems such as legacy code integration, message queues, connection
          management, Kubernetes, and Docker.`,
-        technologies: ['.NET Core', 'C#', 'Microservice', 'Entity', 'RabbitMQ', 'Docker', 'Kubernetes'],
+        technologies: ['.NET Core', 'C#', 'Microservice', 'Entity Code First', 'RabbitMQ', 'Docker', 'Kubernetes'],
         imgUrl: 'assets/img/infinite-energy-logo.png'
       },
       {
