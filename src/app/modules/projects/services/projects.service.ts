@@ -17,6 +17,24 @@ export class ProjectsService {
   constructor() {
     this.projects$ = of([
       {
+        title: 'Builderbook',
+        description: `I have a passion to push myself further and one area I wanted to strengthen was my understanding enterprise web application development and
+         deployment so I started developing a team management and communication application to be hosted in AWS and built complete with bells and whistles like
+         user session management and email templates. I can't describe to you how much fun I'm having learning all these cool things!`,
+        technologies: ['React', 'NodeJS', 'Express', 'Next.js', 'Material UI', 'Typescript', 'Jest', 'Google OAuth', 'Mongo'],
+        imgUrl: 'assets/img/builderbook-logo.svg',
+        repoUrl: 'https://github.com/RyanClementsHax/builderbook.git'
+      },
+      {
+        title: 'GW2Api.NET',
+        description: `My favorite game in the world is Guild Wars 2. I've been playing since the beta events. I wanted to challenge my understanding of C# and rest
+         while having fun with my favorite video game, so i built a modern C# api client for the game! I even took it a step further and implemented integration tests
+         for all of the functionality. Funny story: there are so many that when I run them all I get throttled by them. You could say my CI pipeline DOS's their servers.`,
+        technologies: ['C#', 'REST', 'Unit tests'],
+        imgUrl: 'assets/img/gw2-logo.jpg',
+        repoUrl: 'https://github.com/RyanClementsHax/GW2Api.NET'
+      },
+      {
         title: 'Catholic Gators Admin',
         description: `What started off as a senior project turned into a favorite pastime with a few friends of mine.
          This app handles the contact management for the church I went to in undergrad and is designed to help new
