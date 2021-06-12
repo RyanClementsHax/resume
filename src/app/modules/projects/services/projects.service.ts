@@ -46,7 +46,7 @@ export class ProjectsService {
       {
         title: 'This Website!',
         description: 'When it came time to think about career fair, I thought, "Why not build my own website!??!", and here we are.',
-        technologies: ['Angular 10', 'rxjs', 'Travis CI', 'Github Pages'],
+        technologies: ['Angular 12', 'rxjs', 'Travis CI', 'Github Pages'],
         imgUrl: 'assets/img/website.PNG',
         projectUrl: 'https://ryanclementshax.github.io/resume',
         repoUrl: 'https://github.com/RyanClementsHax/resume'
