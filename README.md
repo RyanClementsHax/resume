@@ -12,7 +12,7 @@ This is my personal website that doubles as my resume! I wanted to start hacking
 
 ## Technologies
 
-* `Angular 10`
+* `Angular 12`
 * basic `rxjs` for data loading
 * [Jest](https://jestjs.io/) for testing
 * [Travis CI integration](https://travis-ci.org/RyanClementsHax/resume)

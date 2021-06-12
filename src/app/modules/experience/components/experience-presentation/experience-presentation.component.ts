@@ -11,8 +11,7 @@ export class ExperiencePresentationComponent {
     title: '',
     company: '',
     position: '',
-    startDate: null,
-    endDate: null,
+    startDate: new Date(),
     description: '',
     technologies: [],
     imgUrl: ''

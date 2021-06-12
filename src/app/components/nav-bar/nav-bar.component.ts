@@ -9,10 +9,10 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements AfterViewInit {
-  @ViewChild('links') links: ElementRef;
+  @ViewChild('links') links: ElementRef = { nativeElement: null };
 
   expanded = false;
-  linksMaxHeight: number;
+  linksMaxHeight: number = 0;
 
   constructor(private router: Router) {
     this.router.events.pipe(
