@@ -33,7 +33,7 @@ export const ROUTES: Routes = [
 
 @NgModule({
   declarations: [AppComponent, NavBarComponent],
-  imports: [BrowserModule, AboutMeModule, RouterModule.forRoot(ROUTES)],
+  imports: [BrowserModule, AboutMeModule, RouterModule.forRoot(ROUTES, { relativeLinkResolution: 'legacy' })],
   providers: [],
   bootstrap: [AppComponent]
 })
