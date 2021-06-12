@@ -8,7 +8,7 @@
         <span>
           <time>{{ experience.startDate | date:'MMM/yyyy' }}</time>
           &nbsp;-&nbsp;
-          <time>{{ experience.endDate != null ? (experience.endDate | date:'MMM/yyyy') : 'Present' }}</time>
+          <time>{{ experience.endDate ? (experience.endDate | date:'MMM/yyyy') : 'Present' }}</time>
         </span>
       </em>
     </header>
