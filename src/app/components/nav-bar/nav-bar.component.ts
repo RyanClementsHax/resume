@@ -12,7 +12,7 @@ export class NavBarComponent implements AfterViewInit {
   @ViewChild('links') links: ElementRef = { nativeElement: null };
 
   expanded = false;
-  linksMaxHeight: number = 0;
+  linksMaxHeight = 0;
 
   constructor(private router: Router) {
     this.router.events.pipe(

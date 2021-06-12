@@ -5,10 +5,9 @@ ExperiencePresentationComponent {
   "experience": Object {
     "company": "",
     "description": "",
-    "endDate": null,
     "imgUrl": "",
     "position": "",
-    "startDate": null,
+    "startDate": 2021-06-12T19:34:15.322Z,
     "technologies": Array [],
     "title": "",
   },
