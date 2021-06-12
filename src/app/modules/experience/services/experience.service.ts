@@ -31,9 +31,9 @@ export class ExperienceService {
         position: 'Junior Software Engineer',
         startDate: new Date(2020, 11),
         description: `Lead developer and product manager on a document editing and management application written using Vue,
-         .net core, Entity Framework, Postgres, and AWS complete with accessibility, chrome lighthouse testing, integration and
-         end to end testing using Cypress.`,
-        technologies: ['Vue', 'Vuex', 'Cypress', '.NET Core', 'C#', 'Entity DB First', 'Postgres', 'AWS'],
+         Typescript, .net core, Entity Framework, Postgres, and AWS complete with accessibility, chrome lighthouse testing,
+         integration and end to end testing using Cypress.`,
+        technologies: ['Vue', 'Typescript', 'Vuex', 'Cypress', '.NET Core', 'C#', 'Entity DB First', 'Postgres', 'AWS'],
         imgUrl: 'assets/img/saic-logo.png'
       },
       {
